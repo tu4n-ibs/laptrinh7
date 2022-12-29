@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kiểm tra số nguyên tố</title>
+    </head>
+    <body>            
+        <script>
+         var snt = Number(prompt ("nhap mot so bat ki de kiem tra so nguyen to"));
+            function kiem_tra_snt(n) {
+                if (snt===1) {
+                    return false;
+                 }else {
+                 for(var x = 2; x < snt; x++) {
+                    if(snt % x === 0) {
+                     return false;
+                     }
+                     return true;
+                    } 
+                }
+            }    
+            document.write(kiem_tra_snt(snt));
+        </script>
+    </body>
+</html>
